@@ -62,6 +62,18 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
+const init = () => {
+    inquirer.prompt(questions)
+.then((data) => {
+    console.log(data);
+    const markdownContent = generateMarkdown(data);
+    writeToFile('README.md', markdownContent);
+})
+.catch((error) => {
+    console.error(error);
+});
+};
+
 
 
 // Function call to initialize app
