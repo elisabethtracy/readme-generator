@@ -28,10 +28,10 @@ function renderLicenseLink(license) {
       return '[GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0)';
     case 'bsd 3-clause':
       return '[BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)';
-};
-if (!license) {
-  return '';
-};
+  };
+  if (!license) {
+    return '';
+  };
 };
 
 // TODO: Create a function that returns the license section of README

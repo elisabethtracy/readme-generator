@@ -1,7 +1,7 @@
-# t
+# README.md File Generator Application
  
 ## Description
- t
+ This command-line application dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer), fs package, and generateMarkdown package.
  
 ## Table of Contents
 
@@ -18,16 +18,16 @@
   - [Questions](#questions)
  
 ## Installation
- t
+ N/A
  
 ## Usage
- t
+ To use this application, the user must open the integrated terminal in visual studio code and first install the proper packages using the npm install command. The package dependencies include 'inquirer', 'fs', and 'generateMarkdown'. Next, the user will run the node command with file name 'index.js'. The user will record their responses, and a professional, high-quality README.md file will be generated. 
  
 ## Contributing
- t
+ N/A
 
 ## Tests
- t
+ N/A
 
 ## License
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -35,6 +35,6 @@
 
 ## Questions
 
-  If you have any questions, please contact me at [t](mailto:t).
+  If you have any questions, please contact me at [elisabethtracy@gmail.com](mailto:elisabethtracy@gmail.com).
 
-  Github: [t](https://github.com/t)
+  Github: [elisabethtracy](https://github.com/elisabethtracy)

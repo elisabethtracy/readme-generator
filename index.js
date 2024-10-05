@@ -2,6 +2,7 @@
 import inquirer from 'inquirer';
 import generateMarkdown from './generateMarkdown.js';
 import fs from 'fs';
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -55,7 +56,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', data, (err) => {
+    fs.writeFile('sample-README.md', data, (err) => {
         err ? console.error(err) : console.log('README.md file created!');
     });
 };
@@ -64,14 +65,14 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     inquirer.prompt(questions)
-.then((data) => {
-    console.log(data);
-    const markdownContent = generateMarkdown(data);
-    writeToFile('README.md', markdownContent);
-})
-.catch((error) => {
-    console.error(error);
-});
+        .then((data) => {
+            console.log(data);
+            const markdownContent = generateMarkdown(data);
+            writeToFile('sample-README.md', markdownContent);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
 };
 
 // Function call to initialize app
